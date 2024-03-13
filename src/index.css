@@ -1,13 +1,95 @@
-body {
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  /* border: 1px solid red; */
+}
+.todo-app{
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url("https://media.istockphoto.com/id/1481623699/photo/business-management-in-action-a-businessperson-or-a-manager-checking-completed-tasks-off-a.jpg?s=612x612&w=0&k=20&c=3bhvW5rARhN3lLVQKZMNRzYi5TIl835Qhj7NiL-1ITA=") no-repeat center/ cover ;
+}
+input{
+  padding: 10px;
+  background: transparent;
+  width: 358px;
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  border: solid goldenrod;
+  border-width: .5px;
+  border-right-width: 0;
+  color: white;
+  border-radius: 4px 0 0  4px;
+  
+}
+button{
+  padding: 10px;
+  background: transparent;
+  border: .5px solid goldenrod;
+  color: white;
+  backdrop-filter: blur(10px);
+  font-size: 20px;
+  cursor: pointer;
+  border-left-width: 0;
+  border-radius: 4px;
+}
+button:hover{
+  background: orange;
+}
+.todo-list{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, .3);
+}
+.todos{
+ width: auto;
+}
+.todo{
+  display: flex;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  padding: 12px;
+  
+  border: 1px;
+  font-size: 20px;
+  border-radius: 8px ;
+  width: 420px;
+  color: white;
+  background-color: rgba(100, 100, 100, 0.6);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.todo span{
+  display: flex;
+  gap: 20px;
 }
+
+.nav a.active{
+  padding: 10px;
+  color: #fff;
+  background: goldenrod;
+}
+.about a.active{
+  padding: 10px;
+  color: white;
+  background-color: green;
+}
+
+.about main{
+  margin-top: 50px;
+}
+
+
+
